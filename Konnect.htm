@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+a:link, a:visited{
+	background-color:blue;
+	color:white;
+	padding: 15px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+a:hover, a:active{
+	background-color: red;
+}
+body{
+	background-image: linear-gradient( 35deg, rgba(90, 50, 200, 0.8),
+		rgba(90, 56, 116, 0.6)), url("https://d1y8sb8igg2f8e.cloudfront.net/images/shutterstock_674373478.2e16d0ba.fill-1200x630.jpg");
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 background-position: center;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+h1{
+
+	font-size:7vw;
+	color:#ff790e;
+	text-align:center;
+
+
+
+}
+h2{
+	color:maroon;
+	text-align:center;
+	font-size:25px;
+	background: white;
+	padding: 0 20px;
+	border: 3px blue solid;
+	border-radius: 154px;
+
+}
+.slogan{
+	font-size:20px;
+	font-family:monospace;
+	text-align:center;
+	color:maroon;
+	background: white;
+	padding: 0 20px;
+	border: 3px blue solid;
+	border-radius: 150px;
+}
+button{
+	 background-color:#ff790e;
+}
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: white;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ul {
+  margin: 15px 0;
+}
+
+.product > ul > li {
+  padding: 5px 0;
+	color: white;
+}
+
+.product > button {
+  border: 25;
+  margin: 25px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+	justify-content: center;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9em;
+  color: #444;
+}
+footer > nav {
+  background-color: #000;
+  text-decoration: none;
+}
+
+
+p{
+	color:white;
+	font-size:20px;
+	text-align:center;
+
+}
+
+
+</style>
+</head>
+<meta charset="UTF-8">
+<meta name="description" content="Konnect">
+<meta name="keywords" content="Konnect Packs">
+<meta name="author" content="nuel07">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Konnect Homepage</title>
+<nav style="text-align:center;">
+	<a href="https://www.bbc.com/news/world">NEWS</a>
+	<a href="http://127.0.0.1:8000/music/">MUSIC</a>
+	<a href="https://www.google.com/search?client=firefox-b-d&q=movies#wxpd=:true">MOVIES</a>
+	<a href="https://www.bbc.com/sport/14025760">SPORTS</a>
+	<a href="http://127.0.0.1:8000/music/register/">SIGN UP</a>
+</nav>
+<body>
+<h1><strong> KONNECT
+		<p class="slogan">Keeping you Konnected to the World</p> </strong></h1>
+<hr>
+<p style="float:center;">At Konnect we strive to offer you unlimited reliable internet solutions at affordable and competitive prices.<br> Coupled with great content from allover the world including NEWS, SPORTS, MUSIC,
+	 MOVIES and many more.<br>Just <a href="http://127.0.0.1:8000/music/register/">Sign up</a> to get your first free pack of unlimited internet today.<br>Check out our internet packs below and pick any that suits your needs.</p>
+<h2>Konnect Packs</h2>
+<p> Check out our unlimited internet packages tailor made just for you.</p>
+<section id="pricing">
+      <div class="product" id="social">
+        <div class="level">Social Packs</div>
+        <h2>$20</h2>
+        <ul>
+          <li>Facebook.</li>
+          <li>Whatsapp.</li>
+          <li>Instagram.</li>
+					<li>Twitter.</li>
+          <li>Snapchat.</li>
+					<li>TikTok.</li>
+        </ul>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="streaming">
+        <div class="level">Streaming Packs</div>
+        <h2>$30</h2>
+        <ul>
+          <li>Youtube.</li>
+          <li>Hulu.</li>
+          <li>Vimeo.</li>
+          <li>Netflix.</li>
+        </ul>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="internet">
+        <div class="level">Full Internet Packs</div>
+        <h2>$50</h2>
+		      <p>Browse and download all your favorite online content unlimited.</p>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+<footer>
+      <nav style="text-align:center;">
+      	<a href="#">Privacy</a>
+				<a href="#">Terms</a>
+				<a href="#">Contact</a>
+      </nav>
+      <span>&copy; 2021 Konnect</span>
+    </footer>
+</body>
+</html>
